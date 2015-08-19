@@ -1,0 +1,8 @@
+.idea
+*.iml
+*.ipr
+node_modules
+.DS_Store
+.yo-rc.json
+jshint-reporter.log
+npm-debug.log

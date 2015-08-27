@@ -135,6 +135,7 @@ Recorder.prototype.record = function(req, res) {
     streamCopy(res, resBodyStream);
 
     res.on('finish', function(){
+        resBodyStream.end();
         recorder.saveResponse(req, res, function(){
             recorder.emit('response.finish', req.nnid);    
         });
